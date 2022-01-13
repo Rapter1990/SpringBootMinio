@@ -15,6 +15,8 @@
     <description>Spring Boot with Minio</description>
     <properties>
         <java.version>11</java.version>
+        <minio.version>8.3.4</minio.version>
+        <hutool.version>5.7.19</hutool.version>
     </properties>
     <dependencies>
         <dependency>
@@ -32,6 +34,26 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>io.minio</groupId>
+            <artifactId>minio</artifactId>
+            <version>${minio.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
