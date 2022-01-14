@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @Configuration
 @ConfigurationProperties(prefix = "minio")
-public class MinoConfig {
+public class MinioConfig {
 
     /** *  It's a URL, domain name ,IPv4 perhaps IPv6 Address ") */
     private String endpoint;
