@@ -1,8 +1,8 @@
 package com.springminio.app.payload;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.*;
-
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -13,5 +13,7 @@ public class FileResponse {
     String filename;
     String contentType;
     Long fileSize;
-    Date createdTime;
+
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'", timezone = "GMT")
+    private LocalDateTime createdTime;
 }

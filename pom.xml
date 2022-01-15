@@ -15,8 +15,8 @@
     <description>Spring Boot with Minio</description>
     <properties>
         <java.version>11</java.version>
-        <minio.version>8.3.4</minio.version>
-        <hutool.version>5.7.19</hutool.version>
+        <minio.version>8.2.1</minio.version>
+        <hutool.version>5.6.5</hutool.version>
     </properties>
     <dependencies>
         <dependency>
