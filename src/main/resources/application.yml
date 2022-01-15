@@ -4,7 +4,7 @@ spring:
   application:
     name: springboot-minio
 minio:
-  endpoint: http://localhost:9000
+  endpoint: http://127.0.0.1:9000
   port: 9000
   accessKey:  minioadmin #Login Account
   secretKey:  minioadmin # Login Password
@@ -12,4 +12,3 @@ minio:
   bucket-name: commons # Bucket Name
   image-size: 10485760 #  Maximum size of picture file
   file-size: 1073741824 #  Maximum file size
-  Copy code
