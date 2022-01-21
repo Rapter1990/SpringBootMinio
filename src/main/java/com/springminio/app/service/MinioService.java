@@ -7,7 +7,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.InputStream;
 import java.util.List;
 
-public interface IMinioService {
+public interface MinioService {
 
     //Check Whether bucket already exists
     boolean bucketExists(String bucketName);
