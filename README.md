@@ -40,6 +40,138 @@
     username : minioadmin
     password : minioadmin
 ```
+<b>5 )</b> Explore Rest APIs
+<table style="width:100%">
+  <tr>
+    <th>Method</th>
+    <th>Url</th>
+    <th>Description</th>
+    <th>Valid Request Body</th>
+    <th>Valid Request Params</th>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/upload</td>
+    <td>Upload file to Minio</td>
+    <td>[Info](#upload)</td>
+    <td></td>
+  </tr>
+  <tr>
+      <td>POST</td>
+      <td>/addBucket/{bucketName}</td>
+      <td>Add BucketName in Minio</td>
+      <td></td>
+      <td>[Info](#addBucketName)</td>
+  </tr>
+  <tr>
+      <td>GET</td>
+      <td>/show/{bucketName}</td>
+      <td>Show defined Bucketname by its name in Minio</td>
+      <td></td>
+      <td>[Info](#showBucketName)</td>
+  </tr>
+  <tr>
+      <td>GET</td>
+      <td>/showBucketName</td>
+      <td>Show all BucketNames in Minio</td>
+      <td></td>
+      <td>[Info](#showAllBucketName)</td>
+  </tr>
+  <tr>
+      <td>DELETE</td>
+      <td>/removeBucket/{bucketName}</td>
+      <td>Delete defined bucketname from Minio</td>
+      <td></td>
+      <td>[Info](#deleteBucketName)</td>
+  </tr>
+  <tr>
+       <td>DELETE</td>
+       <td>/removeObject/{bucketName}/{objectName}</td>
+       <td>Delete defined object in defined bucketname from Minio</td>
+       <td></td>
+       <td>[Info](#deleteBucketName)</td>
+  </tr>
+  <tr>
+       <td>DELETE</td>
+       <td>/removeListObject/{bucketName}</td>
+       <td>Remove object list in defined bucketname from Minio</td>
+       <td>[Info](#deleteListObject)</td>
+       <td></td>
+  </tr>
+  <tr>
+       <td>GET</td>
+       <td>/showListObjectNameAndDownloadUrl/{bucketName}</td>
+       <td>List object names and its download url in defined bucketname of Minio</td>
+       <td></td>
+       <td>[Info](#objectInformation)</td>
+  </tr>
+  <tr>
+       <td>GET</td>
+       <td>/download/{bucketName}/{objectName}</td>
+       <td>Download object in BucketName from Minio</td>
+       <td></td>
+       <td>[Info](#download)</td>
+  </tr>
+</table>
+
+### Used Dependencies
+* Spring Boot Web
+* Minio
+* Lombok
+* AspectJ
+* Apache Commons Lang
+* Swagger
+
+## Swagger
+> **Access : http://localhost:8085/swagger-ui.html**
+
+## Valid Request Body
+
+##### <a id="upload">Upload -> http://localhost:8085/minio/upload</a>
+```
+    file : Uploaded File
+    bucketname : commons
+```
+
+##### <a id="deleteListObject">Delete List Object-> http://localhost:8085/minio/removeListObject/{bucketName}</a>
+```
+   [
+       "de43ab54e89f4879a2baf87df1570f56.PNG",
+       "f107737d21534f42a72dcf009a64a07d.PNG"
+   ]
+```
+
+## Valid Request Params
+
+##### <a id="addBucketName">Add Bucket Name -> http://localhost:8085/minio/addBucket/{bucketName}</a>
+```
+   http://localhost:8085/minio/addBucket/test1
+```
+
+##### <a id="showBucketName">Show Bucket Name -> http://localhost:8085/minio/show/{bucketName}</a>
+```
+   http://localhost:8085/minio/show/commons
+```
+
+##### <a id="showAllBucketName">Show All Bucket Names -> http://localhost:8085/minio/showBucketName</a>
+```
+   http://localhost:8085/minio/showBucketName
+```
+
+##### <a id="deleteBucketName">Delete Bucket Name -> http://localhost:8085/minio/removeBucket/{bucketName}</a>
+```
+   http://localhost:8085/minio/removeBucket/test1
+```
+
+##### <a id="objectInformation">List Object Information -> http://localhost:8085/minio/showListObjectNameAndDownloadUrl/{bucketName}</a>
+```
+   http://localhost:8085/minio/removeBucket/test1
+```
+
+##### <a id="download">Download File -> http://localhost:8085/minio/removeBucket/{bucketName}</a>
+```
+   http://localhost:8085/minio/download/commons/ad94ff2e9b404772a1f9b98f4e11b4f9.PNG
+```
 
 ### Screenshots
 
