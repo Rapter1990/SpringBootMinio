@@ -53,7 +53,7 @@
     <td>POST</td>
     <td>/upload</td>
     <td>Upload file to Minio</td>
-    <td>[Info](#upload)</td>
+    <td>[Info](upload)</td>
     <td></td>
   </tr>
   <tr>
@@ -61,41 +61,41 @@
       <td>/addBucket/{bucketName}</td>
       <td>Add BucketName in Minio</td>
       <td></td>
-      <td>[Info](#addBucketName)</td>
+      <td>[Info](addBucketName)</td>
   </tr>
   <tr>
       <td>GET</td>
       <td>/show/{bucketName}</td>
       <td>Show defined Bucketname by its name in Minio</td>
       <td></td>
-      <td>[Info](#showBucketName)</td>
+      <td>[Info](showBucketName)</td>
   </tr>
   <tr>
       <td>GET</td>
       <td>/showBucketName</td>
       <td>Show all BucketNames in Minio</td>
       <td></td>
-      <td>[Info](#showAllBucketName)</td>
+      <td>[Info](showAllBucketName)</td>
   </tr>
   <tr>
       <td>DELETE</td>
       <td>/removeBucket/{bucketName}</td>
       <td>Delete defined bucketname from Minio</td>
       <td></td>
-      <td>[Info](#deleteBucketName)</td>
+      <td>[Info](deleteBucketName)</td>
   </tr>
   <tr>
        <td>DELETE</td>
        <td>/removeObject/{bucketName}/{objectName}</td>
        <td>Delete defined object in defined bucketname from Minio</td>
        <td></td>
-       <td>[Info](#deleteBucketName)</td>
+       <td>[Info](deleteBucketName)</td>
   </tr>
   <tr>
        <td>DELETE</td>
        <td>/removeListObject/{bucketName}</td>
        <td>Remove object list in defined bucketname from Minio</td>
-       <td>[Info](#deleteListObject)</td>
+       <td>[Info](deleteListObject)</td>
        <td></td>
   </tr>
   <tr>
@@ -103,14 +103,14 @@
        <td>/showListObjectNameAndDownloadUrl/{bucketName}</td>
        <td>List object names and its download url in defined bucketname of Minio</td>
        <td></td>
-       <td>[Info](#objectInformation)</td>
+       <td>[Info](objectInformation)</td>
   </tr>
   <tr>
        <td>GET</td>
        <td>/download/{bucketName}/{objectName}</td>
        <td>Download object in BucketName from Minio</td>
        <td></td>
-       <td>[Info](#download)</td>
+       <td>[Info](download)</td>
   </tr>
 </table>
 
