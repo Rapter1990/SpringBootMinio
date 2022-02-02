@@ -53,7 +53,7 @@
     <td>POST</td>
     <td>/upload</td>
     <td>Upload file to Minio</td>
-    <td>[Info](upload)</td>
+    <td><a href="README.md#upload">Info</a></td>
     <td></td>
   </tr>
   <tr>
@@ -61,7 +61,7 @@
       <td>/addBucket/{bucketName}</td>
       <td>Add BucketName in Minio</td>
       <td></td>
-      <td><a href="README.md#upload">Info</a></td>
+      <td><a href="README.md#addBucketName">Info</a></td>
   </tr>
   <tr>
       <td>GET</td>
