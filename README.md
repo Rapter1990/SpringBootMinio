@@ -61,41 +61,41 @@
       <td>/addBucket/{bucketName}</td>
       <td>Add BucketName in Minio</td>
       <td></td>
-      <td>[Info](addBucketName)</td>
+      <td><a href="README.md#upload">Info</a></td>
   </tr>
   <tr>
       <td>GET</td>
       <td>/show/{bucketName}</td>
       <td>Show defined Bucketname by its name in Minio</td>
       <td></td>
-      <td>[Info](showBucketName)</td>
+      <td><a href="README.md#showBucketName">Info</a></td>
   </tr>
   <tr>
       <td>GET</td>
       <td>/showBucketName</td>
       <td>Show all BucketNames in Minio</td>
       <td></td>
-      <td>[Info](showAllBucketName)</td>
+      <td><a href="README.md#showAllBucketName">Info</a></td>
   </tr>
   <tr>
       <td>DELETE</td>
       <td>/removeBucket/{bucketName}</td>
       <td>Delete defined bucketname from Minio</td>
       <td></td>
-      <td>[Info](deleteBucketName)</td>
+      <td><a href="README.md#deleteBucketName">Info</a></td>
   </tr>
   <tr>
        <td>DELETE</td>
        <td>/removeObject/{bucketName}/{objectName}</td>
        <td>Delete defined object in defined bucketname from Minio</td>
        <td></td>
-       <td>[Info](deleteBucketName)</td>
+       <td><a href="README.md#deleteObject">Info</a></td>
   </tr>
   <tr>
        <td>DELETE</td>
        <td>/removeListObject/{bucketName}</td>
        <td>Remove object list in defined bucketname from Minio</td>
-       <td>[Info](deleteListObject)</td>
+       <td><a href="README.md#deleteListObject">Info</a></td>
        <td></td>
   </tr>
   <tr>
@@ -103,14 +103,14 @@
        <td>/showListObjectNameAndDownloadUrl/{bucketName}</td>
        <td>List object names and its download url in defined bucketname of Minio</td>
        <td></td>
-       <td>[Info](objectInformation)</td>
+       <td><a href="README.md#objectInformation">Info</a></td>
   </tr>
   <tr>
        <td>GET</td>
        <td>/download/{bucketName}/{objectName}</td>
        <td>Download object in BucketName from Minio</td>
        <td></td>
-       <td>[Info](download)</td>
+       <td><a href="README.md#download">Info</a></td>
   </tr>
 </table>
 
@@ -171,6 +171,11 @@
 ##### <a id="download">Download File -> http://localhost:8085/minio/removeBucket/{bucketName}</a>
 ```
    http://localhost:8085/minio/download/commons/ad94ff2e9b404772a1f9b98f4e11b4f9.PNG
+```
+
+##### <a id="deleteObject">Download File -> http://localhost:8085/minio/removeObject/{bucketName}/{objectName}</a>
+```
+   http://localhost:8085/minio/removeObject/commons/a2d203e188f94ccb8393e688deaf216a.jpg
 ```
 
 ### Screenshots
