@@ -168,12 +168,12 @@
    http://localhost:8085/minio/removeBucket/test1
 ```
 
-##### <a id="download">Download File -> http://localhost:8085/minio/removeBucket/{bucketName}</a>
+##### <a id="download">Download File -> http://localhost:8085/minio/download/{bucketName}/{objectName}</a>
 ```
    http://localhost:8085/minio/download/commons/ad94ff2e9b404772a1f9b98f4e11b4f9.PNG
 ```
 
-##### <a id="deleteObject">Download File -> http://localhost:8085/minio/removeObject/{bucketName}/{objectName}</a>
+##### <a id="deleteObject">Delete File from Bucket Name -> http://localhost:8085/minio/removeObject/{bucketName}/{objectName}</a>
 ```
    http://localhost:8085/minio/removeObject/commons/a2d203e188f94ccb8393e688deaf216a.jpg
 ```
